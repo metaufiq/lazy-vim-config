@@ -10,18 +10,17 @@ return {
       "hrsh7th/cmp-buffer",
       "hrsh7th/cmp-path",
     },
-    enabled = false
+    enabled = false,
   },
   {
     "catppuccin/nvim",
     lazy = true,
-    name = "catppuccin", 
+    name = "catppuccin",
     priority = 1000,
     opts = {
       color_overrides = {
         all = {},
-        latte = {
-        },
+        latte = {},
         frappe = {
           text = "#FFFFFF",
           blue = "#6fd184",
@@ -30,7 +29,7 @@ return {
         mocha = {},
       },
       transparent_background = true,
-    }
+    },
   },
 
   -- Configure LazyVim to load gruvbox
@@ -41,3 +40,4 @@ return {
     },
   },
 }
+
