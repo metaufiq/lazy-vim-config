@@ -1,7 +1,3 @@
--- local keyset = vim.keymap.set
-
--- keyset("i", "<c-s>", ":lua vim.lsp.buf.hover()")
-
 return {
   {
     "hrsh7th/nvim-cmp",
@@ -12,6 +8,22 @@ return {
       "hrsh7th/cmp-buffer",
       "hrsh7th/cmp-path",
     },
-    enabled = true,
+  },
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = { eslint = {} },
+      setup = {
+        eslint = function()
+          require("lazyvim.util").lsp.on_attach(function(client)
+            if client.name == "eslint" then
+              client.server_capabilities.documentFormattingProvider = true
+            elseif client.name == "tsserver" then
+              client.server_capabilities.documentFormattingProvider = false
+            end
+          end)
+        end,
+      },
+    },
   },
 }
