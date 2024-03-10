@@ -14,7 +14,8 @@ Be sure to use it with your concern.
 component name:
 
 //write your component name
-component name: example // (it will create an Example component using the component template)
+//example, the code below will create an Example component using the component template
+component name: example 
 ```
 
 I hope you enjoy it 😉
