@@ -20,7 +20,7 @@ their plugins
 component name:
 
 //write your component name
-//example, the code below will create an Example component using the component template
+//example below will create an Example component using the component template
 component name: example 
 ```
 
