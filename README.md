@@ -1,4 +1,4 @@
-# Warp Themes
+# Lazy Vim Config 💤
 
 this is metaufiq personal config for [💤 lazy.nvim](https://www.lazyvim.org/). Be sure to use it with your concern.
 
