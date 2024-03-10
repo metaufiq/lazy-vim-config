@@ -4,7 +4,7 @@ this is metaufiq personal config to create react typescript component template ð
 Be sure to use it with your concern.
 
 ## how to run
-### run this command on 
+### run this on [Command Line Mode](https://neovim.io/doc/user/cmdline.html) 
 ```
 :GenerateReactTSComponent
 ```
